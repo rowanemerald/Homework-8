@@ -1,0 +1,57 @@
+<html>
+    <title>Rowan's Third Page</title>
+    <head><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script>
+            function checkForm()
+            {
+                var name;
+                name = document.getElementById("fName").value;
+                if(name == "")
+                { 
+                    document.getElementById("fName").style.backgroundColor = "red";
+                    document.getElementById("fName").focus();
+                }
+                else
+                {
+                    document.getElementById("fName").style.backgroundColor = "white";
+                }
+               var name;
+               name = document.getElementById("lName").value;
+               if(name == "")
+               {
+                document.getElementById("lName").style.backgroundColor = "red";
+                document.getElementById("lName").focus();
+               }
+               else
+               {
+                document.getElementById("lName").style.backgroundColor = "white";
+               }
+               var name;
+               name = document.getElementById("email").value;
+               if(name == "")
+               {
+                document.getElementById("email").style.backgroundColor = "red";
+                document.getElementById("email").focus();
+               }
+               else
+               {
+                document.getElementById("email").style.backgroundColor = "white";
+               }
+            }
+            </script>
+    </head>
+    <body>
+        <h1>Contact Us</h1>
+            First Name: <input type="text" id="fName"><br>
+            Last Name: <input type="text" id="lName"><br>
+            Email: <input type="text" id="email"><br>
+            <button id="mySubmit" onClick="checkForm();">Submit</button><br>
+            Accept Terms?: <button id="yes" type="yes">Yes</button>
+            <button id="no" type="no">No</button><br>
+            <p></p>
+            <p></p>
+            <a href="firstpage.html">Home Page</a>
+            <a href="secondpage.html">Previous Page</a>
+            
+    </body>
+</html>
